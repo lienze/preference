@@ -139,4 +139,9 @@ set completeopt=longest,menu    " same behavior with normal IDE
 autocmd InsertLeave * if pumvisible() == 0|pclose|endif    " leave insert mode and close the preview window
 let g:ycm_complete_in_comments = 1    " Complete in comments
 let g:ycm_complete_in_strings = 1     " Complete in strings
-
+let g:ycm_filetype_whitelist = {
+			\ "go":1,
+			\ "c":1,
+			\ "cpp":1,
+			\ "h":1,
+			\ }
