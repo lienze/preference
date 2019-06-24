@@ -132,3 +132,11 @@ endif
 "   set fileencodings=ucs-bom,utf-8,latin1
 "endif
 
+"""""""""""""""""""""""""""""""""""""""""""""
+" YouCompleteMe config
+"""""""""""""""""""""""""""""""""""""""""""""
+set completeopt=longest,menu    " same behavior with normal IDE
+autocmd InsertLeave * if pumvisible() == 0|pclose|endif    " leave insert mode and close the preview window
+let g:ycm_complete_in_comments = 1    " Complete in comments
+let g:ycm_complete_in_strings = 1     " Complete in strings
+
