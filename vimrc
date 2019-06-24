@@ -71,9 +71,9 @@ function! DealSemicolon(char)
 endfunction
 function! EnterButton()
 	let curChar = getline('.')[col('.')-1]
-	if (curChar == '}')
-		return "\<CR>\<ESC>xO"
-	elseif (curChar == ')')
+	if curChar == '}'
+		return "\<CR>\<ESC>O"
+	elseif curChar == ')'
 		return "\<CR>\<ESC>O\<Tab>"
 	else
 		return "\<CR>"
