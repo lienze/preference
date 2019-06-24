@@ -15,6 +15,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'ycm-core/YouCompleteMe'
+Plugin 'jiangmiao/auto-pairs'
 call vundle#end()
 filetype plugin indent on
 
@@ -44,41 +45,45 @@ set history=50		" keep 50 lines of command line history
 """"""""""""""""""""""""""""""""""""""""""""
 " key mapping
 """"""""""""""""""""""""""""""""""""""""""""
-inoremap ( ()<ESC>i
-inoremap [ []<ESC>i
-inoremap < <><ESC>i
-inoremap { {}<ESC>i
-inoremap <CR> <c-r>=EnterButton()<CR>
-inoremap ) <c-r>=ClosePair(')')<CR>
-inoremap } <c-r>=ClosePair('}')<CR>
-inoremap ] <c-r>=ClosePair(']')<CR>
-inoremap > <c-r>=ClosePair('>')<CR>
-inoremap " <c-r>=DealSemicolon('"')<CR>
-inoremap ' <c-r>=DealSemicolon("'")<CR>
-function! ClosePair(char)
-	if getline('.')[col('.') - 1] == a:char
-		return "\<Right>"
-	else
-		return a:char
-	endif
-endfunction
-function! DealSemicolon(char)
-	if getline('.')[col('.') - 1] == a:char
-		return "\<Right>"
-	else
-		return a:char.a:char."\<Left>"
-	endif
-endfunction
-function! EnterButton()
-	let curChar = getline('.')[col('.')-1]
-	if curChar == '}'
-		return "\<CR>\<ESC>O"
-	elseif curChar == ')'
-		return "\<CR>\<ESC>O\<Tab>"
-	else
-		return "\<CR>"
-	endif
-endfunction
+"inoremap ( ()<ESC>i
+"inoremap [ []<ESC>i
+"inoremap < <><ESC>i
+"inoremap { {}<ESC>i
+"inoremap <CR> <c-r>=EnterButton()<CR>
+"inoremap ) <c-r>=ClosePair(')')<CR>
+"inoremap } <c-r>=ClosePair('}')<CR>
+"inoremap ] <c-r>=ClosePair(']')<CR>
+"inoremap > <c-r>=ClosePair('>')<CR>
+"inoremap " <c-r>=DealSemicolon('"')<CR>
+"inoremap ' <c-r>=DealSemicolon("'")<CR>
+"function! ClosePair(char)
+"	if getline('.')[col('.') - 1] == a:char
+"		return "\<Right>"
+"	else
+"		return a:char
+"	endif
+"endfunction
+"function! DealSemicolon(char)
+"	if getline('.')[col('.') - 1] == a:char
+"		return "\<Right>"
+"	else
+"		return a:char.a:char."\<Left>"
+"	endif
+"endfunction
+"function! EnterButton()
+"	let curChar = getline('.')[col('.')-1]
+"	if curChar == '}'
+"		return "\<CR>\<ESC>O"
+"	elseif curChar == ')'
+"		return "\<CR>\<ESC>O\<Tab>"
+"	else
+"		return "\<CR>"
+"	endif
+"endfunction
+""""""""""""""""""""""""""""""""""""""""""""
+" note: the mapping above has been insteaded
+"       by jiangmiao/auto
+""""""""""""""""""""""""""""""""""""""""""""
 
 """"""""""""""""""""""""""""""""""""""""""""
 " Tag List
