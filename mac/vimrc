@@ -116,7 +116,7 @@ set list
 " auto load cscope.out
 """""""""""""""""""""""""""""""""""""""""""""
 if has("cscope") && filereadable("/usr/local/Cellar/cscope/15.9/bin/cscope")
-   set csprg=/usr/bin/cscope
+   set csprg=/usr/local/Cellar/cscope/15.9/bin/cscope
    set csto=0
    set cst
    set nocsverb
