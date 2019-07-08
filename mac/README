@@ -1,0 +1,3 @@
+安装完 Homebrew 后打开终端输入：brew install vim --with-lua --with-override-system-vi
+啊，你说不习惯用终端 vim，要用 GUI 版的？一样一样的：brew install macvim --with-lua --with-override-system-vim
+
