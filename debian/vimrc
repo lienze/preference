@@ -158,3 +158,5 @@ let g:ycm_global_ycm_extra_conf = "~/.vim/bundle/YouCompleteMe/third_party/ycmd/
 let g:ycm_show_diagnostics_ui = 0
 let g:ycm_seed_identifiers_with_syntax = 1
 let g:ycm_collect_identifiers_from_tags_files = 1    " start engine based on tags
+highlight YcmErrorSection term=reverse ctermfg=yellow ctermbg=red gui=undercurl guisp=Red    " modified color for go error section
+
