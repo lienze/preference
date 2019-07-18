@@ -17,3 +17,14 @@ PATH=$PATH:/usr/local/go/bin
 export GOPATH=~/gopkg
 GO111MODULE=on
 
+function proxy_on(){
+	export http_proxy=http://127.0.0.1:1087
+	export https_proxy=http://127.0.0.1:1087
+	echo -e "proxy on success!"
+}
+
+function proxy_off(){
+	unset http_proxy
+	unset https_proxy
+	echo -e "proxy off success!"
+}
