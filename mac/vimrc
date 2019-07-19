@@ -5,7 +5,8 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'taglist.vim'
+" Plugin 'taglist.vim'
+Plugin 'majutsushi/tagbar'
 Plugin 'itchyny/vim-cursorword'
 " Plugin 'vim-airline/vim-airline'
 " Plugin 'autoload_cscope.vim'
@@ -40,8 +41,8 @@ set bs=2
 set viminfo='20,\"50	" read/write a .viminfo file, don't store more
 			" than 50 lines of registers
 set history=50		" keep 50 lines of command line history
-"set tags=tags;
-"set autochdir
+" set tags=tags;
+" set autochdir
 """"""""""""""""""""""""""""""""""""""""""""
 " key mapping
 """"""""""""""""""""""""""""""""""""""""""""
@@ -88,13 +89,51 @@ set history=50		" keep 50 lines of command line history
 """"""""""""""""""""""""""""""""""""""""""""
 " Tag List
 """"""""""""""""""""""""""""""""""""""""""""
-map <F1> <ESC>:TlistToggle<CR>
-let Tlist_Ctags_Cmd = '/usr/local/Cellar/ctags/5.8_1/bin/ctags'
-let Tlist_Show_One_File = 1
-let Tlist_Exit_OnlyWindow = 1
-let Tlist_Use_Right_Window = 0
-let Tlist_Auto_Open = 0
-let Tlist_Close_On_Select = 1
+"map <F1> <ESC>:TlistToggle<CR>
+"let Tlist_Ctags_Cmd = '/usr/local/Cellar/ctags/5.8_1/bin/ctags'
+"let Tlist_Show_One_File = 1
+"let Tlist_Exit_OnlyWindow = 1
+"let Tlist_Use_Right_Window = 0
+"let Tlist_Auto_Open = 0
+"let Tlist_Close_On_Select = 1
+
+""""""""""""""""""""""""""""""""""""""""""""
+" tagbar
+""""""""""""""""""""""""""""""""""""""""""""
+map <F1> :TagbarToggle<CR>
+let g:tagbar_ctags_bin = '/usr/local/bin/ctags'
+let g:tagbar_left = 0    "show tagbar on the left
+let g:tagbar_width = 30    "set width instead 40
+let g:tagbar_autofocus = 1    "auto focus
+let g:tagbar_sort = 0    "sort
+let g:tagbar_autoclose = 1    " auto close
+let g:tagbar_type_go = {
+\ 'ctagstype' : 'go',
+\ 'kinds' : [
+\ 'p:package',
+\ 'i:imports:1',
+\ 'c:constants',
+\ 'v:variables',
+\ 't:types',
+\ 'n:interfaces',
+\ 'w:fields',
+\ 'e:embedded',
+\ 'm:methods',
+\ 'r:constructor',
+\ 'f:functions'
+\ ],
+\ 'sro' : '.',
+\ 'kind2scope' : {
+\ 't' : 'ctype',
+\ 'n' : 'ntype'
+\ },
+\ 'scope2kind' : {
+\ 'ctype' : 't',
+\ 'ntype' : 'n'
+\ },
+\ 'ctagsbin' : 'gotags',
+\ 'ctagsargs' : '-sort -silent'
+\ }
 
 """"""""""""""""""""""""""""""""""""""""""""
 " NERDTree
