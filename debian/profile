@@ -25,3 +25,18 @@ PATH=$PATH:/usr/local/mongodb/bin
 PATH=$PATH:/usr/local/go/bin
 
 export GOPATH=$HOME/gopkg
+export GO111MODULE=on
+
+PATH=$PATH:$GOPATH/bin
+
+function proxy_on(){
+	export http_proxy=http://10.0.2.2:1080
+	export https_proxy=http://10.0.2.2:1080
+	echo -e "proxy on success!"
+}
+
+function proxy_off(){
+	unset http_proxy
+	unset https_proxy
+	echo -e "proxy off success!"
+}
