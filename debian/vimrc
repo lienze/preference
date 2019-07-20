@@ -10,7 +10,7 @@ Plugin 'majutsushi/tagbar'
 Plugin 'itchyny/vim-cursorword'
 " Plugin 'vim-airline/vim-airline'
 " Plugin 'autoload_cscope.vim'
-" Plugin 'fatih/vim-go'
+Plugin 'fatih/vim-go'
 " Plugin 'SirVer/ultisnips'    " if note UltiSnips requires py >= 2.7 or py3, apt install vim-gtk
 Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
