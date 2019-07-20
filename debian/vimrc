@@ -98,6 +98,16 @@ set history=50		" keep 50 lines of command line history
 " let Tlist_Close_On_Select = 1
 
 """"""""""""""""""""""""""""""""""""""""""""
+" NERDTree
+""""""""""""""""""""""""""""""""""""""""""""
+map <F1> :NERDTreeToggle<CR>
+let NERDTreeShowHidden = 1    "Show Hidden files
+let NERDTreeIgnore = ['\.swp','\.swo']    "Don't Show Files
+let NERDTreeQuitOnOpen = 1    "Close NERDTree when files was opened
+let NERDTreeWinPos = 0    "Show on left by default
+let NERDTreeShowBookmarks = 1    "Show BookMarks
+
+""""""""""""""""""""""""""""""""""""""""""""
 " Tagbar
 """"""""""""""""""""""""""""""""""""""""""""
 map <F2> :TagbarToggle<CR>
@@ -134,16 +144,6 @@ let g:tagbar_type_go = {
 \ 'ctagsbin' : 'gotags',
 \ 'ctagsargs' : '-sort -silent'
 \ }
-
-""""""""""""""""""""""""""""""""""""""""""""
-" NERDTree
-""""""""""""""""""""""""""""""""""""""""""""
-map <F1> :NERDTreeToggle<CR>
-let NERDTreeShowHidden = 1    "Show Hidden files
-let NERDTreeIgnore = ['\.swp','\.swo']    "Don't Show Files
-let NERDTreeQuitOnOpen = 1    "Close NERDTree when files was opened
-let NERDTreeWinPos = 0    "Show on left by default
-let NERDTreeShowBookmarks = 1    "Show BookMarks
 
 """""""""""""""""""""""""""""""""""""""""""""
 " show blank space
