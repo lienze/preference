@@ -5,7 +5,8 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'taglist.vim'
+" Plugin 'taglist.vim'
+Plugin 'majutsushi/tagbar'
 Plugin 'itchyny/vim-cursorword'
 " Plugin 'vim-airline/vim-airline'
 " Plugin 'autoload_cscope.vim'
@@ -88,18 +89,56 @@ set history=50		" keep 50 lines of command line history
 """"""""""""""""""""""""""""""""""""""""""""
 " Tag List
 """"""""""""""""""""""""""""""""""""""""""""
-map <F1> <ESC>:TlistToggle<CR>
-let Tlist_Ctags_Cmd = '/usr/bin/ctags'
-let Tlist_Show_One_File = 1
-let Tlist_Exit_OnlyWindow = 1
-let Tlist_Use_Right_Window = 0
-let Tlist_Auto_Open = 0
-let Tlist_Close_On_Select = 1
+" map <F1> <ESC>:TlistToggle<CR>
+" let Tlist_Ctags_Cmd = '/usr/bin/ctags'
+" let Tlist_Show_One_File = 1
+" let Tlist_Exit_OnlyWindow = 1
+" let Tlist_Use_Right_Window = 0
+" let Tlist_Auto_Open = 0
+" let Tlist_Close_On_Select = 1
+
+""""""""""""""""""""""""""""""""""""""""""""
+" Tagbar
+""""""""""""""""""""""""""""""""""""""""""""
+map <F2> :TagbarToggle<CR>
+let g:tagbar_ctags_bin = '/usr/bin/ctags'
+let g:tagbar_left = 1    "show tagbar on the left
+let g:tagbar_width = 30    "set width instead 40
+let g:tagbar_autofocus = 1    "auto focus
+let g:tagbar_sort = 0    "sort
+let g:tagbar_autoclose = 1    " auto close
+let g:tagbar_type_go = {
+\ 'ctagstype' : 'go',
+\ 'kinds' : [
+\ 'p:package',
+\ 'i:imports:1',
+\ 'c:constants',
+\ 'v:variables',
+\ 't:types',
+\ 'n:interfaces',
+\ 'w:fields',
+\ 'e:embedded',
+\ 'm:methods',
+\ 'r:constructor',
+\ 'f:functions'
+\ ],
+\ 'sro' : '.',
+\ 'kind2scope' : {
+\ 't' : 'ctype',
+\ 'n' : 'ntype'
+\ },
+\ 'scope2kind' : {
+\ 'ctype' : 't',
+\ 'ntype' : 'n'
+\ },
+\ 'ctagsbin' : 'gotags',
+\ 'ctagsargs' : '-sort -silent'
+\ }
 
 """"""""""""""""""""""""""""""""""""""""""""
 " NERDTree
 """"""""""""""""""""""""""""""""""""""""""""
-map <F2> :NERDTreeToggle<CR>
+map <F1> :NERDTreeToggle<CR>
 let NERDTreeShowHidden = 1    "Show Hidden files
 let NERDTreeIgnore = ['\.swp','\.swo']    "Don't Show Files
 let NERDTreeQuitOnOpen = 1    "Close NERDTree when files was opened
