@@ -10,7 +10,7 @@ Plugin 'majutsushi/tagbar'
 Plugin 'itchyny/vim-cursorword'
 " Plugin 'vim-airline/vim-airline'
 " Plugin 'autoload_cscope.vim'
-" Plugin 'fatih/vim-go'
+Plugin 'fatih/vim-go'
 " Plugin 'SirVer/ultisnips'    " if note UltiSnips requires py >= 2.7 or py3, apt install vim-gtk
 Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
@@ -193,4 +193,11 @@ let g:ycm_global_ycm_extra_conf = "~/.vim/bundle/YouCompleteMe/third_party/ycmd/
 let g:ycm_show_diagnostics_ui = 0
 let g:ycm_seed_identifiers_with_syntax = 1
 let g:ycm_collect_identifiers_from_tags_files = 1    " start engine based on tags
+
+"""""""""""""""""""""""""""""""""""""""""""""
+" vim-go config
+"""""""""""""""""""""""""""""""""""""""""""""
+let g:go_fmt_command = "goimports"
+let g:go_code_completion_enabled = 0
+let g:go_auto_sameids = 1
 
