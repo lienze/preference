@@ -44,6 +44,7 @@ set viminfo='20,\"50	" read/write a .viminfo file, don't store more
 set history=50		" keep 50 lines of command line history
 " set tags=tags;
 " set autochdir
+set ruler
 """"""""""""""""""""""""""""""""""""""""""""
 " key mapping
 """"""""""""""""""""""""""""""""""""""""""""
