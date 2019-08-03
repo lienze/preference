@@ -17,6 +17,7 @@ Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'ycm-core/YouCompleteMe'
 Plugin 'jiangmiao/auto-pairs'
+Plugin 'easymotion/vim-easymotion'
 call vundle#end()
 filetype plugin indent on
 
@@ -200,4 +201,9 @@ let g:ycm_collect_identifiers_from_tags_files = 1    " start engine based on tag
 let g:go_fmt_command = "goimports"
 let g:go_code_completion_enabled = 0
 let g:go_auto_sameids = 1
+"
+"""""""""""""""""""""""""""""""""""""""""""""
+" easymotion config
+"""""""""""""""""""""""""""""""""""""""""""""
+let mapleader = ","
 
