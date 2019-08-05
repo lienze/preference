@@ -100,9 +100,19 @@ set ruler
 "let Tlist_Close_On_Select = 1
 
 """"""""""""""""""""""""""""""""""""""""""""
+" NERDTree
+""""""""""""""""""""""""""""""""""""""""""""
+map <F1> :NERDTreeToggle<CR>
+let NERDTreeShowHidden = 1    "Show Hidden files
+let NERDTreeIgnore = ['\.swp','\.swo']    "Don't Show Files
+let NERDTreeQuitOnOpen = 1    "Close NERDTree when files was opened
+let NERDTreeWinPos = 0    "Show on left by default
+let NERDTreeShowBookmarks = 1    "Show BookMarks
+
+""""""""""""""""""""""""""""""""""""""""""""
 " tagbar
 """"""""""""""""""""""""""""""""""""""""""""
-map <F1> :TagbarToggle<CR>
+map <F2> :TagbarToggle<CR>
 let g:tagbar_ctags_bin = '/usr/local/bin/ctags'
 let g:tagbar_left = 0    "show tagbar on the left
 let g:tagbar_width = 30    "set width instead 40
@@ -136,16 +146,6 @@ let g:tagbar_type_go = {
 \ 'ctagsbin' : 'gotags',
 \ 'ctagsargs' : '-sort -silent'
 \ }
-
-""""""""""""""""""""""""""""""""""""""""""""
-" NERDTree
-""""""""""""""""""""""""""""""""""""""""""""
-map <F2> :NERDTreeToggle<CR>
-let NERDTreeShowHidden = 1    "Show Hidden files
-let NERDTreeIgnore = ['\.swp','\.swo']    "Don't Show Files
-let NERDTreeQuitOnOpen = 1    "Close NERDTree when files was opened
-let NERDTreeWinPos = 0    "Show on left by default
-let NERDTreeShowBookmarks = 1    "Show BookMarks
 
 """""""""""""""""""""""""""""""""""""""""""""
 " show blank space
@@ -202,7 +202,7 @@ let g:ycm_collect_identifiers_from_tags_files = 1    " start engine based on tag
 let g:go_fmt_command = "goimports"
 let g:go_code_completion_enabled = 0
 let g:go_auto_sameids = 1
-"
+
 """""""""""""""""""""""""""""""""""""""""""""
 " easymotion config
 """""""""""""""""""""""""""""""""""""""""""""
