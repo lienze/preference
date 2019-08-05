@@ -17,6 +17,7 @@ Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'ycm-core/YouCompleteMe'
 Plugin 'jiangmiao/auto-pairs'
+Plugin 'easymotion/vim-easymotion'
 call vundle#end()
 filetype plugin indent on
 
@@ -205,3 +206,8 @@ autocmd FileType go highlight YcmErrorSection term=reverse ctermfg=yellow ctermb
 let g:go_fmt_command = "goimports"
 let g:go_code_completion_enabled = 0
 let g:go_auto_sameids = 1
+
+"""""""""""""""""""""""""""""""""""""""""""""
+" easymotion config
+"""""""""""""""""""""""""""""""""""""""""""""
+let mapleader = ","
