@@ -47,6 +47,7 @@ set history=50		" keep 50 lines of command line history
 """"""""""""""""""""""""""""""""""""""""""""
 " key mapping
 """"""""""""""""""""""""""""""""""""""""""""
+nnoremap <C-n> <ESC>:tab split<CR>
 "inoremap ( ()<ESC>i
 "inoremap [ []<ESC>i
 "inoremap < <><ESC>i
