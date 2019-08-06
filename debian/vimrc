@@ -107,6 +107,8 @@ let NERDTreeIgnore = ['\.swp','\.swo']    "Don't Show Files
 let NERDTreeQuitOnOpen = 1    "Close NERDTree when files was opened
 let NERDTreeWinPos = 0    "Show on left by default
 let NERDTreeShowBookmarks = 1    "Show BookMarks
+let g:NERDTreeDirArrowExpandable = '+'
+let g:NERDTreeDirArrowCollapsible = '-'
 
 """"""""""""""""""""""""""""""""""""""""""""
 " Tagbar
