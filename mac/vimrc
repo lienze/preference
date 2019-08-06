@@ -48,6 +48,7 @@ set ruler
 """"""""""""""""""""""""""""""""""""""""""""
 " key mapping
 """"""""""""""""""""""""""""""""""""""""""""
+nnoremap <C-n> <ESC>:tab split<CR>
 "inoremap ( ()<ESC>i
 "inoremap [ []<ESC>i
 "inoremap < <><ESC>i
@@ -116,7 +117,7 @@ let g:NERDTreeDirArrowCollapsible = '-'
 """"""""""""""""""""""""""""""""""""""""""""
 map <F2> :TagbarToggle<CR>
 let g:tagbar_ctags_bin = '/usr/local/bin/ctags'
-let g:tagbar_left = 0    "show tagbar on the left
+let g:tagbar_left = 1    "show tagbar on the left
 let g:tagbar_width = 30    "set width instead 40
 let g:tagbar_autofocus = 1    "auto focus
 let g:tagbar_sort = 0    "sort
