@@ -45,10 +45,15 @@ set history=50		" keep 50 lines of command line history
 " set tags=tags;
 " set autochdir
 set ruler
+"set cc=81
+"highlight ColorColumn ctermbg=7
+autocmd FileType go match Underlined /\%>80v.*/
+
 """"""""""""""""""""""""""""""""""""""""""""
 " key mapping
 """"""""""""""""""""""""""""""""""""""""""""
-nnoremap <C-n> <ESC>:tab split<CR>
+nnoremap <C-n> <ESC>:tab split<CR><C-]>
+nnoremap <C-c> <ESC>:tabc<CR>
 "inoremap ( ()<ESC>i
 "inoremap [ []<ESC>i
 "inoremap < <><ESC>i
