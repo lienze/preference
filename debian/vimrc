@@ -45,7 +45,7 @@ set history=50		" keep 50 lines of command line history
 "set tags=tags;
 "set autochdir
 set cc=81
-highlight ColorColumn guibg=Black ctermbg=Blue
+highlight ColorColumn ctermbg=6
 """"""""""""""""""""""""""""""""""""""""""""
 " key mapping
 """"""""""""""""""""""""""""""""""""""""""""
