@@ -46,7 +46,7 @@ set history=50		" keep 50 lines of command line history
 "set autochdir
 "set cc=81
 "highlight ColorColumn ctermbg=7
-autocmd FileType go match Underlined /\%>80v.*/
+autocmd FileType golang match Underlined /\%>80v.*/
 """"""""""""""""""""""""""""""""""""""""""""
 " key mapping
 """"""""""""""""""""""""""""""""""""""""""""
@@ -213,7 +213,7 @@ autocmd FileType go highlight YcmErrorSection term=reverse ctermfg=yellow ctermb
 let g:go_fmt_command = "goimports"
 let g:go_code_completion_enabled = 0
 let g:go_auto_sameids = 1
-
+let g:go_guru_scope = []
 """""""""""""""""""""""""""""""""""""""""""""
 " easymotion config
 """""""""""""""""""""""""""""""""""""""""""""
