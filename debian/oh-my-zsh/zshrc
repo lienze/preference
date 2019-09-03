@@ -100,7 +100,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 alias ls='ls --color'
-alias ll='ls -l'
+alias ll='ls -lh'
 alias la='ls -a'
 
 source .profile
