@@ -1,0 +1,4 @@
+Note:
+mytheme.zsh-theme should be placed at $(HOME)/.oh-my-zsh/themes/
+and set ZSH_THEME like this:
+ZSH_THEME="mytheme"
