@@ -21,3 +21,5 @@ $go get -u github.com/jstemmer/gotags
 7.vim中安装vim-go插件
 normal模式中输入:GoInstallBinaries安装
 
+8.使用wget安装oh-my-zsh
+$ sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
