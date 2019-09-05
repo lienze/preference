@@ -18,6 +18,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'ycm-core/YouCompleteMe'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'easymotion/vim-easymotion'
+Plugin 'vim-airline/vim-airline'
 call vundle#end()
 filetype plugin indent on
 
@@ -30,7 +31,7 @@ set smartindent
 set shiftwidth=4
 set tabstop=4
 set hlsearch
-
+set t_Co=256    " for vim-airline showing the right color
 """"""""""""""""""""""""""""""""""""""""""""
 " extra setting
 """"""""""""""""""""""""""""""""""""""""""""
@@ -210,9 +211,20 @@ let g:ycm_collect_identifiers_from_tags_files = 1    " start engine based on tag
 let g:go_fmt_command = "goimports"
 let g:go_code_completion_enabled = 0
 let g:go_auto_sameids = 1
+let g:go_guru_scope = []
 
 """""""""""""""""""""""""""""""""""""""""""""
 " easymotion config
 """""""""""""""""""""""""""""""""""""""""""""
 let mapleader = ","
 
+"""""""""""""""""""""""""""""""""""""""""""""
+" vim-airline config
+"""""""""""""""""""""""""""""""""""""""""""""
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#formatter = 'unique_tail'
+let g:airline#extensions#tabline#buffer_nr_show = 1
+let g:airline#extensions#tabline#buffer_nr_format = '[%s]'
+let g:airline#extensions#tabline#tab_nr_type = 1
+let g:airline#extensions#tabline#show_tab_count = 1
