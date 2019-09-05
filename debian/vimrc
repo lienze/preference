@@ -18,6 +18,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'ycm-core/YouCompleteMe'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'easymotion/vim-easymotion'
+Plugin 'vim-airline/vim-airline'
 call vundle#end()
 filetype plugin indent on
 
@@ -30,7 +31,7 @@ set smartindent
 set shiftwidth=4
 set tabstop=4
 set hlsearch
-
+set t_Co=256    " for vim-airline showing the right color
 """"""""""""""""""""""""""""""""""""""""""""
 " extra setting
 """"""""""""""""""""""""""""""""""""""""""""
@@ -218,3 +219,10 @@ let g:go_guru_scope = []
 " easymotion config
 """""""""""""""""""""""""""""""""""""""""""""
 let mapleader = ","
+
+"""""""""""""""""""""""""""""""""""""""""""""
+" vim-airline config
+"""""""""""""""""""""""""""""""""""""""""""""
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#buffer_nr_show = 0
