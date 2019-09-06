@@ -209,7 +209,7 @@ let g:ycm_collect_identifiers_from_tags_files = 1    " start engine based on tag
 
 " modified color for golang
 autocmd FileType go highlight YcmErrorSection term=reverse ctermfg=yellow ctermbg=red gui=undercurl guisp=Red    
-autocmd FileType go highlight Search term=reverse ctermfg=16 guibg=Yellow
+highlight Search term=reverse ctermfg=1 guibg=Yellow
 
 """""""""""""""""""""""""""""""""""""""""""""
 " vim-go config
@@ -227,7 +227,7 @@ let mapleader = ","
 " vim-airline config
 """""""""""""""""""""""""""""""""""""""""""""
 let g:airline_powerline_fonts = 1
-let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#enabled = 0
 let g:airline#extensions#tabline#formatter = 'unique_tail'
 let g:airline#extensions#tabline#buffer_nr_show = 1
 let g:airline#extensions#tabline#buffer_nr_format = '[%s]'
