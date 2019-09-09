@@ -19,6 +19,8 @@ Plugin 'ycm-core/YouCompleteMe'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'vim-airline/vim-airline'
+" Plugin 'altercation/vim-colors-solarized'
+Plugin 'fatih/molokai'
 call vundle#end()
 filetype plugin indent on
 
@@ -31,7 +33,15 @@ set smartindent
 set shiftwidth=4
 set tabstop=4
 set hlsearch
+
+""""""""""""""""""""""""""""""""""""""""""""
+" theme setting
+""""""""""""""""""""""""""""""""""""""""""""
 set t_Co=256    " for vim-airline showing the right color
+colorscheme molokai
+" let g:molokai_original=1
+" let g:rehash256=1
+
 """"""""""""""""""""""""""""""""""""""""""""
 " extra setting
 """"""""""""""""""""""""""""""""""""""""""""
