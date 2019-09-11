@@ -134,7 +134,7 @@ let g:tagbar_ctags_bin = '/usr/bin/ctags'
 let g:tagbar_left = 1    "show tagbar on the left
 let g:tagbar_width = 30    "set width instead 40
 let g:tagbar_autofocus = 1    "auto focus
-let g:tagbar_sort = 0    "sort
+let g:tagbar_sort = 1    "sort
 let g:tagbar_autoclose = 1    " auto close
 let g:tagbar_type_go = {
 \ 'ctagstype' : 'go',
