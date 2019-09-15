@@ -6,7 +6,6 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 #alias vi='/usr/local/Cellar/vim/8.1.2000/bin/vim'
-#alias vim='/usr/local/Cellar/vim/8.1.1650/bin/vim'
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
