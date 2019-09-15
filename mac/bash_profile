@@ -5,7 +5,7 @@ export LSCOLORS=gxfxcxdxbxegedabagacad
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
-alias vi='/usr/local/Cellar/vim/8.1.1750/bin/vim'
+alias vi='/usr/local/Cellar/vim/8.1.2000/bin/vim'
 #alias vim='/usr/local/Cellar/vim/8.1.1650/bin/vim'
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
@@ -14,7 +14,6 @@ alias vi='/usr/local/Cellar/vim/8.1.1750/bin/vim'
 PS1="\[\e[37;40m\][\[\e[32;40m\]\u\[\e[37;40m\]@\h \[\e[36;40m\]\w\[\e[37;40m\]]\[\e[0m\]$ "
 
 PATH=$PATH:/usr/local/go/bin
-PATH=$PATH:~/dev/gitstats
 export GOPATH=~/gopkg
 GO111MODULE=on
 
