@@ -20,6 +20,7 @@ Plugin 'jiangmiao/auto-pairs'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'vim-airline/vim-airline'
 Plugin 'terryma/vim-multiple-cursors'
+Plugin 'scrooloose/nerdcommenter'
 " Plugin 'altercation/vim-colors-solarized'
 Plugin 'fatih/molokai'
 call vundle#end()
