@@ -62,6 +62,7 @@ set ruler
 "set cc=81
 "highlight ColorColumn ctermbg=7
 autocmd FileType go match Underlined /\%>80v.*/
+set cscopequickfix=s-,c-,d-,i-,t-,e-	" show the result in quickfix
 
 """"""""""""""""""""""""""""""""""""""""""""
 " key mapping
