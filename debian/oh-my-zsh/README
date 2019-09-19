@@ -2,7 +2,7 @@ Note:
 1.sh -c "$(wget -O- https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 2.mytheme.zsh-theme should be placed at $(HOME)/.oh-my-zsh/themes/
-and set ZSH_THEME like this:
+and set ZSH_THEME in .zshrc file like this:
 ZSH_THEME="mytheme"
 
 3.command "upgrade_oh_my_zsh" to update.
