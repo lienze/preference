@@ -63,7 +63,6 @@ set history=50		" keep 50 lines of command line history
 autocmd FileType golang match Underlined /\%>80v.*/
 autocmd FileType c match Underlined /\%>80v.*/
 set cscopequickfix=s-,c-,d-,i-,t-,e-	" show the result in quickfix
-set fileencodings=utf-8,gb18030    " code
 
 """"""""""""""""""""""""""""""""""""""""""""
 " key mapping
@@ -202,6 +201,7 @@ endif
 "if v:lang =~ "utf8$" || v:lang =~ "UTF-8$"
 "   set fileencodings=ucs-bom,utf-8,latin1
 "endif
+set fileencodings=utf-8,gb18030    " code
 
 """""""""""""""""""""""""""""""""""""""""""""
 " YouCompleteMe config
@@ -232,6 +232,7 @@ let g:ycm_collect_identifiers_from_tags_files = 1    " start engine based on tag
 """""""""""""""""""""""""""""""""""""""""""""
 " vim-go config
 """""""""""""""""""""""""""""""""""""""""""""
+let g:go_version_warning = 0
 let g:go_fmt_command = "goimports"
 let g:go_code_completion_enabled = 0
 let g:go_auto_sameids = 1
