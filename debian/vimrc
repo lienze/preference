@@ -125,6 +125,7 @@ nnoremap <C-c> <ESC>:tabc<CR>
 " NERDTree
 """"""""""""""""""""""""""""""""""""""""""""
 map <F1> :NERDTreeToggle<CR>
+nmap ,n :NERDTreeFind<CR>
 let NERDTreeShowHidden = 1    "Show Hidden files
 let NERDTreeIgnore = ['\.swp','\.swo']    "Don't Show Files
 let NERDTreeQuitOnOpen = 1    "Close NERDTree when files was opened
