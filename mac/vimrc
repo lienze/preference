@@ -69,6 +69,10 @@ set cscopequickfix=s-,c-,d-,i-,t-,e-	" show the result in quickfix
 """"""""""""""""""""""""""""""""""""""""""""
 nnoremap <C-j> <ESC>:tab split<CR><C-]>
 nnoremap <C-c> <ESC>:tabc<CR>
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
 "inoremap ( ()<ESC>i
 "inoremap [ []<ESC>i
 "inoremap < <><ESC>i
