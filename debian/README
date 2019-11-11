@@ -21,8 +21,13 @@ $ go get -u github.com/jstemmer/gotags
 7.vim中安装vim-go插件
 normal模式中输入:GoInstallBinaries安装
 
-8.使用wget安装oh-my-zsh
+8.oh-my-zsh
+安装（需提前安装wget）
 $ sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+更新
+$ upgrade_oh_my_zsh
+删除
+$ uninstall_oh_my_zsh
 
 9.设置时区
 # cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
