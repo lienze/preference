@@ -129,7 +129,7 @@ nnoremap <C-l> <ESC><C-w>l
 map <F1> :NERDTreeToggle<CR>
 nmap ,n :NERDTreeFind<CR>
 let NERDTreeShowHidden = 1    "Show Hidden files
-let NERDTreeIgnore = ['\.swp','\.swo']    "Don't Show Files
+let NERDTreeIgnore = ['\.swp','\.swo','\.o']    "Don't Show Files
 let NERDTreeQuitOnOpen = 1    "Close NERDTree when files was opened
 let NERDTreeWinPos = 0    "Show on left by default
 let NERDTreeShowBookmarks = 1    "Show BookMarks
