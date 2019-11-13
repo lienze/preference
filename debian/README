@@ -33,3 +33,6 @@ $ uninstall_oh_my_zsh
 
 9.设置时区
 # cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+
+10.安装locate
+# apt install locate
