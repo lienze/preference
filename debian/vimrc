@@ -72,6 +72,8 @@ nnoremap <C-h> <ESC><C-w>h
 nnoremap <C-j> <ESC><C-w>j
 nnoremap <C-k> <ESC><C-w>k
 nnoremap <C-l> <ESC><C-w>l
+nnoremap co :copen<CR>
+nnoremap cc :cclose<CR>
 "inoremap ( ()<ESC>i
 "inoremap [ []<ESC>i
 "inoremap < <><ESC>i
