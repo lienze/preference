@@ -7,9 +7,11 @@ fi
 if [ -f "./cscope.files" ];then
 	rm ./cscope*
 fi
-find ./ -path "./arch" -prune -o -path "./include" -prune -o -name "*.[chS]" > cscope.files
-sed -i "/./arch/d;/./include/d" cscope.files > cscope.files
+touch cscope.files
+find . -path "./arch" -prune -o -path "./include" -prune -o -name "*.[chS]" >> cscope.files
+sed -i "/\.\/arch/d;/\.\/include/d" cscope.files >> cscope.files
 find ./arch/$arch -name "*.[chS]" >> cscope.files
 find ./include/asm-$arch -name "*.[chS]" >> cscope.files
-cscope -bqk
+cscope -Rbqk
+ctags -R
 echo "finished!"
