@@ -22,6 +22,7 @@ Plugin 'terryma/vim-multiple-cursors'
 Plugin 'scrooloose/nerdcommenter'
 " Plugin 'altercation/vim-colors-solarized'
 Plugin 'fatih/molokai'
+Plugin 'luochen1990/rainbow'
 call vundle#end()
 filetype plugin indent on
 
@@ -259,3 +260,7 @@ let g:airline#extensions#tabline#buffer_nr_format = '[%s]'
 let g:airline#extensions#tabline#tab_nr_type = 1
 let g:airline#extensions#tabline#show_tab_count = 1
 
+"""""""""""""""""""""""""""""""""""""""""""""
+" rainbow config
+"""""""""""""""""""""""""""""""""""""""""""""
+let g:rainbow_active = 1
