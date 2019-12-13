@@ -266,3 +266,9 @@ let g:airline#extensions#tabline#show_tab_count = 1
 " rainbow config
 """""""""""""""""""""""""""""""""""""""""""""
 let g:rainbow_active = 1
+
+"""""""""""""""""""""""""""""""""""""""""""""
+" nerdcommenter config
+"""""""""""""""""""""""""""""""""""""""""""""
+let g:NERDSpaceDelims = 1
+
