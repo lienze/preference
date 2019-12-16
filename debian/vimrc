@@ -24,6 +24,8 @@ Plugin 'scrooloose/nerdcommenter'
 " Plugin 'altercation/vim-colors-solarized'
 Plugin 'fatih/molokai'
 Plugin 'luochen1990/rainbow'
+" Plugin 'nathanaelkane/vim-indent-guides'
+" Plugin 'Yggdroot/indentLine'
 call vundle#end()
 filetype plugin indent on
 
@@ -271,4 +273,16 @@ let g:rainbow_active = 1
 " nerdcommenter config
 """""""""""""""""""""""""""""""""""""""""""""
 let g:NERDSpaceDelims = 1
+
+"""""""""""""""""""""""""""""""""""""""""""""
+" vim-indent-guides config
+"""""""""""""""""""""""""""""""""""""""""""""
+" let g:indent_guides_enable_on_vim_startup = 1
+" let g:indent_guides_guide_size = 1
+" let g:indent_guides_start_level = 2
+
+"""""""""""""""""""""""""""""""""""""""""""""
+" indentLine config
+"""""""""""""""""""""""""""""""""""""""""""""
+" let g:indentLine_fileType = ['go']
 
