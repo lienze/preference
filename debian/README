@@ -36,3 +36,10 @@ $ uninstall_oh_my_zsh
 
 10.安装locate
 # apt install locate
+
+11.对于ubuntu或debian等系统中自带的终端，需要安装Powerline fonts
+$ git clone https://github.com/powerline/fonts --depth=1
+$ cd fonts
+$ ./install.sh
+也可以使用快速安装
+$ apt install fonts-powerline
