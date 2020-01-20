@@ -78,6 +78,10 @@ nnoremap <C-k> <ESC><C-w>k
 nnoremap <C-l> <ESC><C-w>l
 nnoremap co :copen<CR>
 nnoremap cc :cclose<CR>
+nmap w= :resize +3<CR>
+nmap w- :resize -3<CR>
+nmap w, :vertical resize +3<CR>
+nmap w. :vertical resize -3<CR>
 "inoremap ( ()<ESC>i
 "inoremap [ []<ESC>i
 "inoremap < <><ESC>i
