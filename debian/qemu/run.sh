@@ -1,1 +1,5 @@
-qemu-system-x86_64 -s -kernel ./linux-5.3.7/arch/x86_64/boot/bzImage -initrd initramfs.cpio.gz -nographic -append "console=ttyS0"
+qemu-system-x86_64 -s \
+	-kernel $HOME/kernel/5/arch/x86_64/boot/bzImage \
+	-initrd initramfs.cpio.gz \
+	-nographic \
+	-append "console=ttyS0"
