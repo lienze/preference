@@ -70,7 +70,7 @@ set cscopequickfix=s-,c-,d-,i-,t-,e-	" show the result in quickfix
 """"""""""""""""""""""""""""""""""""""""""""
 " key mapping
 """"""""""""""""""""""""""""""""""""""""""""
-nnoremap <C-n> <ESC>:tab split<CR><C-]>
+nnoremap <C-m> <ESC>:tab split<CR><C-]>
 nnoremap <C-c> <ESC>:tabc<CR>
 nnoremap <C-h> <ESC><C-w>h
 nnoremap <C-j> <ESC><C-w>j
