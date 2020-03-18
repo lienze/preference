@@ -43,3 +43,6 @@ $ cd fonts
 $ ./install.sh
 也可以使用快速安装
 $ apt install fonts-powerline
+
+12.安装Tmux Plugin Manager
+$ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
