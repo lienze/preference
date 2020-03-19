@@ -40,3 +40,6 @@ function proxy_off(){
 	unset https_proxy
 	echo -e "proxy off success!"
 }
+
+alias ntmux='tmux -2 new -s'
+
