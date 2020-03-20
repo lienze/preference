@@ -103,4 +103,4 @@ alias ls='ls --color'
 alias ll='ls -lh'
 alias la='ls -a'
 
-source .profile
+source $HOME/.profile
