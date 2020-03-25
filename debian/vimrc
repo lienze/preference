@@ -71,7 +71,7 @@ set cscopequickfix=s-,c-,d-,i-,t-,e-	" show the result in quickfix
 """"""""""""""""""""""""""""""""""""""""""""
 " key mapping
 """"""""""""""""""""""""""""""""""""""""""""
-nnoremap <C-m> <ESC>:tab split<CR><C-]>
+nnoremap <C-n> <ESC>:tab split<CR><C-]>
 nnoremap <C-c> <ESC>:tabc<CR>
 nnoremap <C-h> <ESC><C-w>h
 nnoremap <C-j> <ESC><C-w>j
@@ -262,7 +262,7 @@ let mapleader = ","
 """""""""""""""""""""""""""""""""""""""""""""
 let g:airline_powerline_fonts = 1
 let g:airline_theme = "molokai"
-let g:airline#extensions#tabline#enabled = 0
+let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#formatter = 'unique_tail'
 let g:airline#extensions#tabline#buffer_nr_show = 1
 let g:airline#extensions#tabline#buffer_nr_format = '[%s]'
