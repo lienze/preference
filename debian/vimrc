@@ -8,7 +8,7 @@ Plugin 'VundleVim/Vundle.vim'
 " Plugin 'taglist.vim'
 Plugin 'majutsushi/tagbar'
 Plugin 'itchyny/vim-cursorword'
-Plugin 'lfv89/vim-interestingwords'
+Plugin 'lfv89/vim-interestingwords'    "<Leader>k/K n/N
 " Plugin 'autoload_cscope.vim'
 Plugin 'fatih/vim-go'
 " Plugin 'SirVer/ultisnips'    " if note UltiSnips requires py >= 2.7 or py3, apt install vim-gtk
