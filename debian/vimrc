@@ -270,6 +270,13 @@ let g:airline#extensions#tabline#buffer_nr_format = '[%s]'
 let g:airline#extensions#tabline#tab_nr_type = 1
 let g:airline#extensions#tabline#show_tab_count = 1
 
+" enable/disable YCM integration
+let g:airline#extensions#ycm#enabled = 1
+" set error count prefix
+let g:airline#extensions#ycm#error_symbol = 'E:'
+" set warning count prefix
+let g:airline#extensions#ycm#warning_symbol = 'W:'
+
 """""""""""""""""""""""""""""""""""""""""""""
 " rainbow config
 """""""""""""""""""""""""""""""""""""""""""""
