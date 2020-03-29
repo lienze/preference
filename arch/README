@@ -5,11 +5,8 @@ $ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 $ ssh-keygen -t rsa -C "your_email@example.com"
 
 3.安装YouCompleteMe插件步骤
-$ apt install build-essential cmake python3-dev vim-gtk python2-dev
-$ apt install clang
+$ pacman -S cmake
 $ ~/.vim/bundle/YouCompleteMe/ 该目录下执行./install.py --clang-completer --go-completer
-注意：32位系统安装时若出现CMake Error，使用如下命令
-$ ./install.sh --clang-completer --system-libclang
 
 4.motd为开机提示符文件
 
@@ -35,14 +32,14 @@ $ uninstall_oh_my_zsh
 # cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 
 10.安装locate
-# apt install locate
+# pacman -S locate
 
 11.对于ubuntu或debian等系统中自带的终端，需要安装Powerline fonts
 $ git clone https://github.com/powerline/fonts --depth=1
 $ cd fonts
 $ ./install.sh
 也可以使用快速安装
-$ apt install fonts-powerline
+$ pacman -S fonts-powerline
 
 12.安装Tmux Plugin Manager
 $ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
