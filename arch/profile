@@ -1,0 +1,21 @@
+export EDITOR=/usr/bin/nano
+export QT_QPA_PLATFORMTHEME="qt5ct"
+export QT_AUTO_SCREEN_SCALE_FACTOR=0
+export GTK2_RC_FILES="$HOME/.gtkrc-2.0"
+
+ifunction proxy_on(){
+        export http_proxy=http://10.0.2.2:1080
+        export https_proxy=http://10.0.2.2:1080
+        echo -e "proxy on success!"
+}
+
+function proxy_off(){
+        unset http_proxy
+        unset https_proxy
+        echo -e "proxy off success!"
+}
+
+alias ntmux='tmux -2 new -s'
+alias ktmux='tmux kill-session -t'
+alias ltmux='tmux ls'
+alias atmux='tmux -2 a -t'
