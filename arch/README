@@ -1,0 +1,48 @@
+1.安装Vundle
+$ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
+2.创建ssh key
+$ ssh-keygen -t rsa -C "your_email@example.com"
+
+3.安装YouCompleteMe插件步骤
+$ apt install build-essential cmake python3-dev vim-gtk python2-dev
+$ apt install clang
+$ ~/.vim/bundle/YouCompleteMe/ 该目录下执行./install.py --clang-completer --go-completer
+注意：32位系统安装时若出现CMake Error，使用如下命令
+$ ./install.sh --clang-completer --system-libclang
+
+4.motd为开机提示符文件
+
+5.安装go-dep
+$ go get -u github.com/golang/dep/cmd/dep
+[note:项目git地址为https://github.com/golang/dep]
+
+6.安装gotags
+$ go get -u github.com/jstemmer/gotags
+
+7.vim中安装vim-go插件
+normal模式中输入:GoInstallBinaries安装
+
+8.oh-my-zsh
+安装（需提前安装wget）
+$ sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+更新
+$ upgrade_oh_my_zsh
+删除
+$ uninstall_oh_my_zsh
+
+9.设置时区
+# cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+
+10.安装locate
+# apt install locate
+
+11.对于ubuntu或debian等系统中自带的终端，需要安装Powerline fonts
+$ git clone https://github.com/powerline/fonts --depth=1
+$ cd fonts
+$ ./install.sh
+也可以使用快速安装
+$ apt install fonts-powerline
+
+12.安装Tmux Plugin Manager
+$ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
