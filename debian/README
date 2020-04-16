@@ -5,11 +5,13 @@ $ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 $ ssh-keygen -t rsa -C "your_email@example.com"
 
 3.安装YouCompleteMe插件步骤
-$ apt install build-essential cmake python3-dev vim-gtk python2-dev
-$ apt install clang
+# apt install build-essential cmake python3-dev vim-gtk python2-dev
+# apt install clang
 $ ~/.vim/bundle/YouCompleteMe/ 该目录下执行./install.py --clang-completer --go-completer
 注意：32位系统安装时若出现CMake Error，使用如下命令
 $ ./install.sh --clang-completer --system-libclang
+注意；最新版本提示缺少setup-tools，这里需要安装pip来解决。
+# apt install python3-pip
 
 4.motd为开机提示符文件
 
