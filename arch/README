@@ -7,6 +7,8 @@ $ ssh-keygen -t rsa -C "your_email@example.com"
 3.安装YouCompleteMe插件步骤
 $ pacman -S cmake
 $ ~/.vim/bundle/YouCompleteMe/ 该目录下执行./install.py --clang-completer --go-completer
+[note:新版本需要安装pip]
+# pacman -S python-pip
 
 4.motd为开机提示符文件
 
@@ -43,3 +45,4 @@ $ pacman -S fonts-powerline
 
 12.安装Tmux Plugin Manager
 $ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
