@@ -25,6 +25,7 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'luochen1990/rainbow'
 " Plugin 'nathanaelkane/vim-indent-guides'
 " Plugin 'Yggdroot/indentLine'
+Plugin 'ctrlpvim/ctrlp.vim'
 
 " Themes------------------------------start
 " Plugin 'altercation/vim-colors-solarized'
@@ -303,4 +304,20 @@ let g:NERDSpaceDelims = 1
 " indentLine config
 """""""""""""""""""""""""""""""""""""""""""""
 " let g:indentLine_fileType = ['go']
+
+"""""""""""""""""""""""""""""""""""""""""""""
+" ctrlp  config
+"""""""""""""""""""""""""""""""""""""""""""""
+let g:ctrlp_map = '<Leader>p'
+let g:ctrlp_cmd = 'CtrlP'
+nmap <Leader>f : CtrlPMRUFiles<CR>
+nmap <Leader>b : CtrlPBuffer<CR>
+let g:ctrlp_custom_ignore = {
+    \ 'dir':  '\v[\/]\.(git|hg|svn|rvm)$',
+    \ 'file': '\v\.(exe|so|dll|zip|tar|tar.gz|pyc)$',
+    \ }
+let g:ctrlp_mruf_max = 500
+let g:ctrlp_follow_symlinks = 1
+let g:ctrlp_by_filename = 1
+let g:ctrlp_regexp = 0
 
