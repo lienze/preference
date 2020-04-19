@@ -26,6 +26,7 @@ Plugin 'luochen1990/rainbow'
 " Plugin 'nathanaelkane/vim-indent-guides'
 " Plugin 'Yggdroot/indentLine'
 Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'kshenoy/vim-signature'
 
 " Themes------------------------------start
 " Plugin 'altercation/vim-colors-solarized'
