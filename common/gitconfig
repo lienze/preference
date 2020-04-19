@@ -4,3 +4,5 @@
 [pager]
 	tag = false
 	branch = false
+[core]
+	editor = vim
