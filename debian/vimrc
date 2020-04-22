@@ -47,6 +47,13 @@ set tabstop=4
 set hlsearch
 
 """"""""""""""""""""""""""""""""""""""""""""
+" vim-cursorword setting
+""""""""""""""""""""""""""""""""""""""""""""
+"let g:cursorword_highlight = 0
+"autocmd Colorscheme * highlight CursorWord0 ctermbg=52 guibg=#5f0000
+"autocmd Colorscheme * highlight CursorWord1 ctermbg=52 guibg=#5f0000
+
+""""""""""""""""""""""""""""""""""""""""""""
 " theme setting
 """"""""""""""""""""""""""""""""""""""""""""
 set t_Co=256    " for vim-airline showing the right color
