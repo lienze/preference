@@ -27,6 +27,7 @@ Plugin 'luochen1990/rainbow'
 " Plugin 'Yggdroot/indentLine'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'kshenoy/vim-signature'
+Plugin 'tpope/vim-fugitive'
 
 " Themes------------------------------start
 " Plugin 'altercation/vim-colors-solarized'
@@ -290,7 +291,11 @@ let g:airline#extensions#tabline#buffer_nr_show = 1
 let g:airline#extensions#tabline#buffer_nr_format = '[%s]'
 let g:airline#extensions#tabline#tab_nr_type = 1
 let g:airline#extensions#tabline#show_tab_count = 1
+
 let g:airline#extensions#whitespace#enabled = 0
+
+let g:airline#extensions#hunks#enabled = 0
+let g:airline#extensions#branch#enabled = 1
 
 " enable/disable YCM integration
 let g:airline#extensions#ycm#enabled = 1
