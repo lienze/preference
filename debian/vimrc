@@ -205,6 +205,11 @@ set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
 set list
 
 """""""""""""""""""""""""""""""""""""""""""""
+" cscope keymap
+"""""""""""""""""""""""""""""""""""""""""""""
+nmap <C-_>t :cs find t <C-R>=expand("<cword>")<CR><CR>
+
+"""""""""""""""""""""""""""""""""""""""""""""
 " auto load cscope.out
 """""""""""""""""""""""""""""""""""""""""""""
 if has("cscope") && filereadable("/usr/bin/cscope")
