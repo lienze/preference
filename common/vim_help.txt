@@ -1,0 +1,2 @@
+1. CTRL + g //displays the current file you're working on.
+2. 
