@@ -13,3 +13,5 @@ $ ./install.sh --clang-completer --system-libclang
 3.vim中安装vim-go插件
 normal模式中输入:GoInstallBinaries安装
 
+4.将mySnippets文件夹放入~/.vim/下
+
