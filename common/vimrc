@@ -11,7 +11,8 @@ Plugin 'itchyny/vim-cursorword'
 Plugin 'lfv89/vim-interestingwords'    "<Leader>k/K n/N
 " Plugin 'autoload_cscope.vim'
 Plugin 'fatih/vim-go'
-" Plugin 'SirVer/ultisnips'    " if note UltiSnips requires py >= 2.7 or py3, apt install vim-gtk
+Plugin 'SirVer/ultisnips'    " if note UltiSnips requires py >= 2.7 or py3, apt install vim-gtk
+Plugin 'honza/vim-snippets'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'airblade/vim-gitgutter'
@@ -265,6 +266,9 @@ let g:ycm_collect_identifiers_from_tags_files = 1    " start engine based on tag
 " autocmd FileType go highlight YcmErrorSection term=reverse ctermfg=yellow ctermbg=red gui=undercurl guisp=Red    
 " highlight Search term=reverse ctermfg=1 guibg=Yellow
 
+let g:ycm_key_list_select_completion = ['<c-n>', '<Down>']
+let g:ycm_key_list_previous_completion = ['<c-p>', '<Up>']
+
 """""""""""""""""""""""""""""""""""""""""""""
 " vim-go config
 """""""""""""""""""""""""""""""""""""""""""""
@@ -327,7 +331,7 @@ let g:NERDSpaceDelims = 1
 " let g:indentLine_fileType = ['go']
 
 """""""""""""""""""""""""""""""""""""""""""""
-" ctrlp  config
+" ctrlp config
 """""""""""""""""""""""""""""""""""""""""""""
 let g:ctrlp_map = '<Leader>p'
 let g:ctrlp_cmd = 'CtrlP'
@@ -342,3 +346,12 @@ let g:ctrlp_follow_symlinks = 1
 let g:ctrlp_by_filename = 1
 let g:ctrlp_regexp = 0
 
+"""""""""""""""""""""""""""""""""""""""""""""
+" UltiSnips config
+"""""""""""""""""""""""""""""""""""""""""""""
+let g:UltiSnipsExpandTrigger = "<tab>"
+
+"""""""""""""""""""""""""""""""""""""""""""""
+" Snippets config
+"""""""""""""""""""""""""""""""""""""""""""""
+let g:UltiSnipsSnippetDirectories = ["UltiSnips", "mySnippets"]
