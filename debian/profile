@@ -46,3 +46,5 @@ alias ktmux='tmux kill-session -t'
 alias ltmux='tmux ls'
 alias atmux='tmux -2 a -t'
 
+# support GPG
+export GPG_TTY=$(tty)
