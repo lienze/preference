@@ -1,0 +1,13 @@
+1. List keys
+	$ gpg --list-keys
+2. Output public key and private key.
+	$ gpg --output mygpgkey_pub.gpg --armor --export XXXXXXXXX
+	$ gpg --output mygpgkey_sec.gpg --armor --export XXXXXXXXX
+3. Import keys
+	$ gpg --import mygpgkey_pub.gpg
+	$ gpg --allow-secret-key-import --import mygpgkey_sec.gpg
+4. Delete password
+	$ gpg --edit-key XXXXXXXX
+	$ passwd
+	$ save
+
