@@ -1,2 +1,4 @@
 1. CTRL + g //displays the current file you're working on.
-2. 
+2. [{ //Jump to the head of the function.
+3. ]} //Jump to the end of the function.
+
