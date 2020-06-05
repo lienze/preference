@@ -29,6 +29,7 @@ Plugin 'luochen1990/rainbow'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'kshenoy/vim-signature'
 Plugin 'tpope/vim-fugitive'
+Plugin 'octol/vim-cpp-enhanced-highlight'
 
 " Themes------------------------------start
 " Plugin 'altercation/vim-colors-solarized'
@@ -316,6 +317,9 @@ let g:airline#extensions#ycm#error_symbol = 'E:'
 " set warning count prefix
 let g:airline#extensions#ycm#warning_symbol = 'W:'
 
+"let g:airline_left_sep = ''
+"let g:airline_right_sep = ''
+
 """""""""""""""""""""""""""""""""""""""""""""
 " rainbow config
 """""""""""""""""""""""""""""""""""""""""""""
@@ -363,3 +367,13 @@ let g:UltiSnipsExpandTrigger = "<tab>"
 " Snippets config
 """""""""""""""""""""""""""""""""""""""""""""
 let g:UltiSnipsSnippetDirectories = ["UltiSnips", "mySnippets"]
+
+"""""""""""""""""""""""""""""""""""""""""""""
+" cpp-enhanced-highlight config
+"""""""""""""""""""""""""""""""""""""""""""""
+let g:cpp_class_scope_highlight = 1
+let g:cpp_member_variable_hiehlight = 1
+let g:cpp_class_decl_highlight = 1
+let g:cpp_posix_standard = 1
+let g:cpp_concepts_highlight = 1
+"let g:cpp_experimental_simple_template_highlight =1
