@@ -30,6 +30,7 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'kshenoy/vim-signature'
 Plugin 'tpope/vim-fugitive'
 Plugin 'octol/vim-cpp-enhanced-highlight'
+Plugin 'vim-scripts/gtags.vim'
 
 " Themes------------------------------start
 " Plugin 'altercation/vim-colors-solarized'
