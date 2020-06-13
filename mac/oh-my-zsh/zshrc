@@ -124,3 +124,11 @@ function proxy_off(){
 	unset https_proxy
 	echo -e "proxy off success!"
 }
+
+alias ntmux='tmux -2 new -s'
+alias ktmux='tmux kill-session -t'
+alias ltmux='tmux ls'
+alias atmux='tmux -2 a -t'
+
+# support GPG$
+export GPG_TTY=$(tty)
