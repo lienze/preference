@@ -27,6 +27,7 @@ Plugin 'luochen1990/rainbow'
 " Plugin 'nathanaelkane/vim-indent-guides'
 " Plugin 'Yggdroot/indentLine'
 Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'tacahiroy/ctrlp-funky'
 Plugin 'kshenoy/vim-signature'
 Plugin 'tpope/vim-fugitive'
 Plugin 'octol/vim-cpp-enhanced-highlight'
@@ -358,6 +359,9 @@ let g:ctrlp_mruf_max = 500
 let g:ctrlp_follow_symlinks = 1
 let g:ctrlp_by_filename = 1
 let g:ctrlp_regexp = 0
+
+nnoremap <Leader>fu :CtrlPFunky<CR>
+nnoremap <Leader>fU :execute 'CtrlPFunky ' . expand('<cword>')<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""
 " UltiSnips config
