@@ -1,8 +1,11 @@
 [user]
-	name = Enze Li
-	email = lienze2010@126.com
+	name = xxx
+	email = xxx@xxx.com
+	signingkey =
 [pager]
 	tag = false
 	branch = false
 [core]
 	editor = vim
+	abbrev = 12
+
