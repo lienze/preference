@@ -33,6 +33,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'octol/vim-cpp-enhanced-highlight'
 Plugin 'vim-scripts/gtags.vim'
 Plugin 'joereynolds/gtags-scope'
+Plugin 'a.vim'
 
 " Themes------------------------------start
 " Plugin 'altercation/vim-colors-solarized'
@@ -396,3 +397,10 @@ if $GLOBAL_SWITCH=='on'
 	let CtagsCscope_Auto_Map = 1
 	let GtagsCscope_Quiet = 1
 endif
+
+"""""""""""""""""""""""""""""""""""""""""""""
+" a.vim config
+"""""""""""""""""""""""""""""""""""""""""""""
+nnoremap <Leader>h :A<CR>
+nnoremap <Leader>H :IH<CR>
+
