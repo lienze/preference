@@ -33,7 +33,8 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'octol/vim-cpp-enhanced-highlight'
 Plugin 'vim-scripts/gtags.vim'
 Plugin 'joereynolds/gtags-scope'
-Plugin 'a.vim'
+Plugin 'a.vim'      " jump to relative .h and .c
+Plugin 'BufOnly.vim'    " unload all buffers but the current one
 
 " Themes------------------------------start
 " Plugin 'altercation/vim-colors-solarized'
