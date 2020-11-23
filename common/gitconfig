@@ -8,8 +8,11 @@
 [core]
 	editor = vim
 	abbrev = 12
+[pull]
+	rebase = false
 [sendemail]
 	smtpencryption = tls
 	smtpserver = smtp-mail.outlook.com
 	smtpuser = xxx@xxx.com
 	smtpserverport = 587
+	suppresscc = self
