@@ -1,2 +1,5 @@
-(require-package 'git-gutter)
+(require 'init-git-gutter)
+(require 'init-auto-complete)
+(require 'init-neotree)
+(require 'gruvbox-theme)
 (provide 'init-elpa)
