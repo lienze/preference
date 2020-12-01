@@ -1,8 +1,12 @@
 ;; melpa package
 (require 'package)
+(package-initialize)
 (setq package-archives '(("gnu"  .  "http://elpa.emacs-china.org/gnu/")
 			 ("melpa" . "http://elpa.emacs-china.org/melpa/")))
-(package-initialize)
+
+(add-to-list 'load-path "~/.emacs.d/lisp/")
+
+(require 'init-elpa)
 
 ;;== tab
 ;(setq tab-always-indent nil)
