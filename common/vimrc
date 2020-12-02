@@ -158,7 +158,7 @@ nmap w. :vertical resize -3<CR>
 """"""""""""""""""""""""""""""""""""""""""""
 " NERDTree
 """"""""""""""""""""""""""""""""""""""""""""
-map <F1> :NERDTreeToggle<CR>
+map <F2> :NERDTreeToggle<CR>
 nmap ,n :NERDTreeFind<CR>
 let NERDTreeShowHidden = 1    "Show Hidden files
 let NERDTreeIgnore = ['\.swp','\.swo','\.o']    "Don't Show Files
@@ -171,7 +171,7 @@ let g:NERDTreeDirArrowCollapsible = '-'
 """"""""""""""""""""""""""""""""""""""""""""
 " Tagbar
 """"""""""""""""""""""""""""""""""""""""""""
-map <F2> :TagbarToggle<CR>
+map <F3> :TagbarToggle<CR>
 let g:tagbar_ctags_bin = '/usr/bin/ctags'
 let g:tagbar_left = 1    "show tagbar on the left
 let g:tagbar_width = 30    "set width instead 40
