@@ -4,5 +4,6 @@
 (require 'init-helm)
 (require 'init-gruvbox-theme)
 (require 'init-imenu-list)
+(require 'init-ggtags)
 
 (provide 'init-elpa)
