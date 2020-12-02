@@ -2,5 +2,5 @@
 
 (load-theme 'gruvbox-dark-soft t)
 
-(provide 'gruvbox-theme)
+(provide 'init-gruvbox-theme)
 
