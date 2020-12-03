@@ -6,5 +6,6 @@
 (require 'init-molokai-theme)
 (require 'init-imenu-list)
 (require 'init-ggtags)
+(require 'init-highlight-symbol)
 
 (provide 'init-elpa)

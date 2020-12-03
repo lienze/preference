@@ -41,7 +41,7 @@ locate PACKAGE."
 
 ;;=== theme
 ;(load-theme 'gruvbox-dark-soft t)
-(load-theme 'molokai t)
+;(load-theme 'molokai t)
 
 ;;=== tab
 ;(setq tab-always-indent nil)
@@ -58,7 +58,11 @@ locate PACKAGE."
 
 ;;=== global key-maps
 (global-set-key(kbd "C-x b") 'helm-buffers-list)
-(global-set-key(kbd "C-x o") (kbd "M-o"))
+;(global-set-key(kbd "C-x o") '(kbd "M-o"))
+;highlight-symbol
+(global-set-key (kbd "C-c k") 'highlight-symbol)
+(global-set-key (kbd "C-c n") 'highlight-symbol-next)
+(global-set-key (kbd "C-c p") 'highlight-symbol-prev)
 
 ;;=== backup
 (setq make-backup-files nil)
@@ -71,7 +75,7 @@ locate PACKAGE."
  '(custom-safe-themes
    '("b89ae2d35d2e18e4286c8be8aaecb41022c1a306070f64a66fd114310ade88aa" "939ea070fb0141cd035608b2baabc4bd50d8ecc86af8528df9d41f4d83664c6a" "aded61687237d1dff6325edb492bde536f40b048eab7246c61d5c6643c696b7f" "4cf9ed30ea575fb0ca3cff6ef34b1b87192965245776afa9e9e20c17d115f3fb" default))
  '(package-selected-packages
-   '(molokai-theme ggtags imenu-list helm gruvbox-theme neotree auto-complete git-gutter))
+   '(highlight-symbol molokai-theme ggtags imenu-list helm gruvbox-theme neotree auto-complete git-gutter))
  '(safe-local-variable-values
    '((eval when
 	   (fboundp 'c-toggle-comment-style)
