@@ -3,6 +3,7 @@
 (require 'init-neotree)
 (require 'init-helm)
 (require 'init-gruvbox-theme)
+(require 'init-molokai-theme)
 (require 'init-imenu-list)
 (require 'init-ggtags)
 
