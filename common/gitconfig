@@ -16,3 +16,7 @@
 	smtpuser = xxx@xxx.com
 	smtpserverport = 587
 	suppresscc = self
+[diff]
+	tool = vimdiff
+[difftool "vimdiff"]
+	cmd = "vimdiff $LOCAL -c ':set noreadonly' $REMOTE -c ':set readonly'"
