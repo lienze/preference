@@ -50,8 +50,8 @@ filetype plugin indent on
 syntax on
 set nu
 set smartindent
-set shiftwidth=4
-set tabstop=4
+set shiftwidth=8
+set tabstop=8
 set hlsearch
 
 """"""""""""""""""""""""""""""""""""""""""""
@@ -365,6 +365,13 @@ let g:ctrlp_regexp = 0
 
 nnoremap <Leader>fu :CtrlPFunky<CR>
 nnoremap <Leader>fU :execute 'CtrlPFunky ' . expand('<cword>')<CR>
+
+"""""""""""""""""""""""""""""""""""""""""""""
+" vim-gitgutter config
+"""""""""""""""""""""""""""""""""""""""""""""
+nmap ghp <Plug>(GitGutterPreviewHunk)
+" let g:gitgutter_close_preview_on_escape = 1
+nmap <silent> <ESC> :pclose<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""
 " UltiSnips config
