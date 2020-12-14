@@ -371,7 +371,7 @@ nnoremap <Leader>fU :execute 'CtrlPFunky ' . expand('<cword>')<CR>
 """""""""""""""""""""""""""""""""""""""""""""
 nmap ghp <Plug>(GitGutterPreviewHunk)
 " let g:gitgutter_close_preview_on_escape = 1
-nmap <silent> <ESC> :pclose<CR>
+nmap <silent> <Leader><ESC> :pclose<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""
 " UltiSnips config
