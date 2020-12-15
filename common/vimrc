@@ -48,10 +48,10 @@ filetype plugin indent on
 " base setting
 """"""""""""""""""""""""""""""""""""""""""""
 syntax on
-set nu
+set number			" set nu
 set smartindent
-set shiftwidth=8
-set tabstop=8
+set shiftwidth=4	" set sw=4
+set tabstop=4		" set ts=4
 set hlsearch
 
 """"""""""""""""""""""""""""""""""""""""""""
