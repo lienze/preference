@@ -35,7 +35,7 @@ Plugin 'vim-scripts/gtags.vim'
 Plugin 'joereynolds/gtags-scope'
 Plugin 'a.vim'      " jump to relative .h and .c
 Plugin 'BufOnly.vim'    " unload all buffers but the current one
-Plugin 'ludovicchabant/vim-gutentags'
+" Plugin 'ludovicchabant/vim-gutentags'
 
 " Themes------------------------------start
 " Plugin 'altercation/vim-colors-solarized'
@@ -416,10 +416,11 @@ nnoremap <Leader>H :IH<CR>
 """""""""""""""""""""""""""""""""""""""""""""
 " vim-gutentags config
 """""""""""""""""""""""""""""""""""""""""""""
-" enable gtags module
-let g:gutentags_modules = ['gtags_cscope']
+"let g:gutentags_enabled = 1
+"let g:gutentags_modules = ['gtags_cscope','cscope','ctags']
+"let g:gutentags_project_root = ['.root', '.git']
+" let g:gutentags_auto_add_gtags_cscope = 0
+"let g:gutentags_generate_on_missing = 0
+"let g:gutentags_generate_on_write = 0
+"map <F4> :GutentagsUpdate<CR>
 
-" config project root markers
-let g:gutentags_project_root = ['.root', '.git']
-
-let g:gutentags_auto_add_gtags_cscope = 0
