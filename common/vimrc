@@ -49,7 +49,7 @@ filetype plugin indent on
 " base setting
 """"""""""""""""""""""""""""""""""""""""""""
 syntax on
-set number			" set nu
+set number		" set nu
 set smartindent
 set shiftwidth=8	" set sw=
 set tabstop=8		" set ts=
@@ -423,4 +423,9 @@ nnoremap <Leader>H :IH<CR>
 "let g:gutentags_generate_on_missing = 0
 "let g:gutentags_generate_on_write = 0
 "map <F4> :GutentagsUpdate<CR>
+
+"""""""""""""""""""""""""""""""""""""""""""""
+" BufOnly config
+"""""""""""""""""""""""""""""""""""""""""""""
+nnoremap BO :BufOnly<CR>
 
