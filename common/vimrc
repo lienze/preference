@@ -57,11 +57,13 @@ set tabstop=8		" set ts=
 set hlsearch
 
 """"""""""""""""""""""""""""""""""""""""""""
-" vim-cursorword setting
+" vim-kcursorword setting
 """"""""""""""""""""""""""""""""""""""""""""
 "let g:cursorword_highlight = 0
 "autocmd Colorscheme * highlight CursorWord0 ctermbg=52 guibg=#5f0000
 "autocmd Colorscheme * highlight CursorWord1 ctermbg=52 guibg=#5f0000
+let g:kcursorword_kernelsource = 0
+map <F4> :ToggleKCursorword<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""
 " theme setting
