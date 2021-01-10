@@ -96,14 +96,19 @@ set cscopequickfix=s-,c-,d-,i-,t-,e-	" show the result in quickfix
 """"""""""""""""""""""""""""""""""""""""""""
 " key mapping
 """"""""""""""""""""""""""""""""""""""""""""
+nnoremap wh :bp<CR>
+nnoremap wl :bn<CR>
+
 nnoremap <C-n> <ESC>:tab split<CR><C-]>
 nnoremap <C-c> <ESC>:tabc<CR>
 nnoremap <C-h> <ESC><C-w>h
 nnoremap <C-j> <ESC><C-w>j
 nnoremap <C-k> <ESC><C-w>k
 nnoremap <C-l> <ESC><C-w>l
+
 nnoremap co :copen<CR>
 nnoremap cc :cclose<CR>
+
 nmap w= :resize +3<CR>
 nmap w- :resize -3<CR>
 nmap w, :vertical resize +3<CR>
