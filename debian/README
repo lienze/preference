@@ -33,3 +33,14 @@ $ apt install fonts-powerline
 
 9.安装Tmux Plugin Manager
 $ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
+10.安装rime输入法
+   # apt install ibus-rime //安装rime输入法
+   # apt install librime-data-wubi //安装五笔库 optional
+   # apt install librime-data-pinyin-simp //安装简体拼音库 optional
+
+11. rime文件夹中为输入法rime的配置文件，将文件夹中的配置文件放入~/.config/ibus/rime下。
+
+12. screenshot.sh脚本为ubuntu系统下截图的脚本，需要提前安装xclip，并在系统设置快捷键。
+
+
