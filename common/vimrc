@@ -366,12 +366,13 @@ nmap <Leader>f : CtrlPMRUFiles<CR>
 nmap <Leader>b : CtrlPBuffer<CR>
 let g:ctrlp_custom_ignore = {
     \ 'dir':  '\v[\/]\.(git|hg|svn|rvm)$',
-    \ 'file': '\v\.(exe|so|dll|zip|tar|tar.gz|pyc)$',
+    \ 'file': '\v\.(exe|so|dll|zip|tar|tar.gz|pyc|o|ko|mod|mod.c)$',
     \ }
 let g:ctrlp_mruf_max = 500
-let g:ctrlp_follow_symlinks = 1
+"let g:ctrlp_follow_symlinks = 1
 let g:ctrlp_by_filename = 1
 let g:ctrlp_regexp = 0
+let g:ctrlp_max_files = 0    " unlimited max files
 
 nnoremap <Leader>fu :CtrlPFunky<CR>
 nnoremap <Leader>fU :execute 'CtrlPFunky ' . expand('<cword>')<CR>
