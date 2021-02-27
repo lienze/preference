@@ -16,6 +16,7 @@
 	smtpuser = xxx@xxx.com
 	smtpserverport = 587
 	suppresscc = self
+	smtpsslcertpath = ""
 [diff]
 	tool = vimdiff
 [difftool "vimdiff"]
