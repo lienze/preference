@@ -5,31 +5,17 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
-" Plugin 'taglist.vim'
 Plugin 'majutsushi/tagbar'
-" Plugin 'itchyny/vim-cursorword'
 Plugin 'lienze/vim-kcursorword'
 Plugin 'lfv89/vim-interestingwords'    "<Leader>k/K n/N
-" Plugin 'autoload_cscope.vim'
-" Plugin 'fatih/vim-go'
-Plugin 'SirVer/ultisnips'    " if note UltiSnips requires py >= 2.7 or py3, apt install vim-gtk
-Plugin 'honza/vim-snippets'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'airblade/vim-gitgutter'
-Plugin 'ycm-core/YouCompleteMe'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'easymotion/vim-easymotion'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-" Plugin 'terryma/vim-multiple-cursors'    " deprecated use vim-visual-multi instaed
 Plugin 'mg979/vim-visual-multi'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'luochen1990/rainbow'
-" Plugin 'nathanaelkane/vim-indent-guides'
-" Plugin 'Yggdroot/indentLine'
-Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'tacahiroy/ctrlp-funky'
 Plugin 'kshenoy/vim-signature'
 Plugin 'tpope/vim-fugitive'
 Plugin 'octol/vim-cpp-enhanced-highlight'
@@ -37,11 +23,6 @@ Plugin 'vim-scripts/gtags.vim'
 Plugin 'joereynolds/gtags-scope'
 Plugin 'a.vim'      " jump to relative .h and .c
 Plugin 'BufOnly.vim'    " unload all buffers but the current one
-" Plugin 'ludovicchabant/vim-gutentags'
-
-" Themes------------------------------start
-" Plugin 'altercation/vim-colors-solarized'
-" Plugin 'fatih/molokai'
 Plugin 'morhetz/gruvbox'
 " Themes--------------------------------end
 call vundle#end()
@@ -56,15 +37,6 @@ set smartindent
 set shiftwidth=8	" set sw=
 set tabstop=8		" set ts=
 set hlsearch
-
-""""""""""""""""""""""""""""""""""""""""""""
-" vim-kcursorword setting
-""""""""""""""""""""""""""""""""""""""""""""
-"let g:cursorword_highlight = 0
-"autocmd Colorscheme * highlight CursorWord0 ctermbg=52 guibg=#5f0000
-"autocmd Colorscheme * highlight CursorWord1 ctermbg=52 guibg=#5f0000
-let g:kcursorword_kernelsource = 0
-map <F4> :ToggleKCursorword<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""
 " theme setting
@@ -114,58 +86,6 @@ nmap w= :resize +3<CR>
 nmap w- :resize -3<CR>
 nmap w, :vertical resize +3<CR>
 nmap w. :vertical resize -3<CR>
-
-nmap <F5> <ESC>:read !date<CR>kJ
-"inoremap ( ()<ESC>i
-"inoremap [ []<ESC>i
-"inoremap < <><ESC>i
-"inoremap { {}<ESC>i
-"inoremap <CR> <c-r>=EnterButton()<CR>
-"inoremap ) <c-r>=ClosePair(')')<CR>
-"inoremap } <c-r>=ClosePair('}')<CR>
-"inoremap ] <c-r>=ClosePair(']')<CR>
-"inoremap > <c-r>=ClosePair('>')<CR>
-"inoremap " <c-r>=DealSemicolon('"')<CR>
-"inoremap ' <c-r>=DealSemicolon("'")<CR>
-"function! ClosePair(char)
-"	if getline('.')[col('.') - 1] == a:char
-"		return "\<Right>"
-"	else
-"		return a:char
-"	endif
-"endfunction
-"function! DealSemicolon(char)
-"	if getline('.')[col('.') - 1] == a:char
-"		return "\<Right>"
-"	else
-"		return a:char.a:char."\<Left>"
-"	endif
-"endfunction
-"function! EnterButton()
-"	let curChar = getline('.')[col('.')-1]
-"	if curChar == '}'
-"		return "\<CR>\<ESC>O"
-"	elseif curChar == ')'
-"		return "\<CR>\<ESC>O\<Tab>"
-"	else
-"		return "\<CR>"
-"	endif
-"endfunction
-""""""""""""""""""""""""""""""""""""""""""""
-" note: the mapping above has been insteaded
-"       by jiangmiao/auto
-""""""""""""""""""""""""""""""""""""""""""""
-
-""""""""""""""""""""""""""""""""""""""""""""
-" Tag List
-""""""""""""""""""""""""""""""""""""""""""""
-" map <F1> <ESC>:TlistToggle<CR>
-" let Tlist_Ctags_Cmd = '/usr/bin/ctags'
-" let Tlist_Show_One_File = 1
-" let Tlist_Exit_OnlyWindow = 1
-" let Tlist_Use_Right_Window = 0
-" let Tlist_Auto_Open = 0
-" let Tlist_Close_On_Select = 1
 
 """"""""""""""""""""""""""""""""""""""""""""
 " NERDTree
@@ -260,82 +180,9 @@ set fileencodings=utf-8,gb18030    " code
 set encoding=utf8
 
 """""""""""""""""""""""""""""""""""""""""""""
-" YouCompleteMe config
-"""""""""""""""""""""""""""""""""""""""""""""
-set completeopt=longest,menu    " same behavior with normal IDE
-autocmd InsertLeave * if pumvisible() == 0|pclose|endif    " leave insert mode and close the preview window
-let g:ycm_complete_in_comments = 1    " Complete in comments
-let g:ycm_complete_in_strings = 1     " Complete in strings
-let g:ycm_filetype_whitelist = {
-			\ "go":1,
-			\ "c":1,
-			\ "cpp":1,
-			\ "h":1,
-			\ "java":1,
-			\ "sh":1,
-			\ "py":1,
-			\ "conf":1
-			\ }
-
-" Note: Conflict with utilsnap.
-" let g:ycm_semantic_triggers =  {
-			" \ 'c,cpp,python,java,go,erlang,perl': ['re!\w{2}'],
-			" \ 'cs,lua,javascript': ['re!\w{2}'],
-			" \ }
-
-let g:ycm_global_ycm_extra_conf = "~/.vim/bundle/YouCompleteMe/third_party/ycmd/.ycm_extra_conf.py"
-let g:ycm_show_diagnostics_ui = 0
-let g:ycm_seed_identifiers_with_syntax = 1
-let g:ycm_collect_identifiers_from_tags_files = 1    " start engine based on tags
-
-" modified color for golang
-" autocmd FileType go highlight YcmErrorSection term=reverse ctermfg=yellow ctermbg=red gui=undercurl guisp=Red    
-" highlight Search term=reverse ctermfg=1 guibg=Yellow
-
-let g:ycm_key_list_select_completion = ['<c-n>', '<Down>']
-let g:ycm_key_list_previous_completion = ['<c-p>', '<Up>']
-
-"""""""""""""""""""""""""""""""""""""""""""""
-" vim-go config
-"""""""""""""""""""""""""""""""""""""""""""""
-"let g:go_version_warning = 0
-let g:go_fmt_command = "goimports"
-let g:go_code_completion_enabled = 0
-let g:go_auto_sameids = 1
-let g:go_guru_scope = []
-
-"""""""""""""""""""""""""""""""""""""""""""""
 " easymotion config
 """""""""""""""""""""""""""""""""""""""""""""
 let mapleader = ","
-
-"""""""""""""""""""""""""""""""""""""""""""""
-" vim-airline config
-"""""""""""""""""""""""""""""""""""""""""""""
-let w:airline_disable_statusline = 0
-let g:airline_powerline_fonts = 1
-let g:airline_theme = "gruvbox"
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#formatter = 'unique_tail'
-let g:airline#extensions#tabline#buffer_nr_show = 1
-let g:airline#extensions#tabline#buffer_nr_format = '[%s]'
-let g:airline#extensions#tabline#tab_nr_type = 1
-let g:airline#extensions#tabline#show_tab_count = 1
-
-let g:airline#extensions#whitespace#enabled = 0
-
-let g:airline#extensions#hunks#enabled = 0
-let g:airline#extensions#branch#enabled = 1
-
-" enable/disable YCM integration
-let g:airline#extensions#ycm#enabled = 1
-" set error count prefix
-let g:airline#extensions#ycm#error_symbol = 'E:'
-" set warning count prefix
-let g:airline#extensions#ycm#warning_symbol = 'W:'
-
-"let g:airline_left_sep = ''
-"let g:airline_right_sep = ''
 
 """""""""""""""""""""""""""""""""""""""""""""
 " rainbow config
@@ -348,53 +195,11 @@ let g:rainbow_active = 1
 let g:NERDSpaceDelims = 1
 
 """""""""""""""""""""""""""""""""""""""""""""
-" vim-indent-guides config
-"""""""""""""""""""""""""""""""""""""""""""""
-" let g:indent_guides_enable_on_vim_startup = 1
-" let g:indent_guides_guide_size = 1
-" let g:indent_guides_start_level = 2
-
-"""""""""""""""""""""""""""""""""""""""""""""
-" indentLine config
-"""""""""""""""""""""""""""""""""""""""""""""
-" let g:indentLine_fileType = ['go']
-
-"""""""""""""""""""""""""""""""""""""""""""""
-" ctrlp config
-"""""""""""""""""""""""""""""""""""""""""""""
-let g:ctrlp_map = '<Leader>p'
-let g:ctrlp_cmd = 'CtrlP'
-nmap <Leader>f : CtrlPMRUFiles<CR>
-nmap <Leader>b : CtrlPBuffer<CR>
-let g:ctrlp_custom_ignore = {
-    \ 'dir':  '\v[\/]\.(git|hg|svn|rvm)$',
-    \ 'file': '\v\.(exe|so|dll|zip|tar|tar.gz|pyc|o|ko|mod|mod.c)$',
-    \ }
-let g:ctrlp_mruf_max = 500
-"let g:ctrlp_follow_symlinks = 1
-let g:ctrlp_by_filename = 1
-let g:ctrlp_regexp = 1
-let g:ctrlp_max_files = 0    " unlimited max files
-
-nnoremap <Leader>fu :CtrlPFunky<CR>
-nnoremap <Leader>fU :execute 'CtrlPFunky ' . expand('<cword>')<CR>
-
-"""""""""""""""""""""""""""""""""""""""""""""
 " vim-gitgutter config
 """""""""""""""""""""""""""""""""""""""""""""
 nmap ghp <Plug>(GitGutterPreviewHunk)
 " let g:gitgutter_close_preview_on_escape = 1
 nmap <silent> <Leader><ESC> :pclose<CR>
-
-"""""""""""""""""""""""""""""""""""""""""""""
-" UltiSnips config
-"""""""""""""""""""""""""""""""""""""""""""""
-let g:UltiSnipsExpandTrigger = "<tab>"
-
-"""""""""""""""""""""""""""""""""""""""""""""
-" Snippets config
-"""""""""""""""""""""""""""""""""""""""""""""
-let g:UltiSnipsSnippetDirectories = ["UltiSnips", "mySnippets"]
 
 """""""""""""""""""""""""""""""""""""""""""""
 " cpp-enhanced-highlight config
@@ -424,17 +229,6 @@ endif
 """""""""""""""""""""""""""""""""""""""""""""
 nnoremap <Leader>h :A<CR>
 nnoremap <Leader>H :IH<CR>
-
-"""""""""""""""""""""""""""""""""""""""""""""
-" vim-gutentags config
-"""""""""""""""""""""""""""""""""""""""""""""
-"let g:gutentags_enabled = 1
-"let g:gutentags_modules = ['gtags_cscope','cscope','ctags']
-"let g:gutentags_project_root = ['.root', '.git']
-" let g:gutentags_auto_add_gtags_cscope = 0
-"let g:gutentags_generate_on_missing = 0
-"let g:gutentags_generate_on_write = 0
-"map <F4> :GutentagsUpdate<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""
 " BufOnly config
