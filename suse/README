@@ -1,0 +1,5 @@
+1. 包管理工具zypper
+   # zypper se xxx 搜索包
+   # zypper in xxx 安装包
+   # zypper rm xxx 删除包
+   # zypper up xxx 更新包
